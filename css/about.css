@@ -124,52 +124,6 @@ section {
     /* padding: 40px 20px; */
 }
 
-.featured h2 {
-    margin-top: 40px;
-
-}
-
-/* =========================
-   PRODUCT GRID
-========================= */
-.product-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.product-card {
-    padding: 30px;
-    background: #f4f4f4;
-    border-radius: 10px;
-}
-
-/* =========================
-   CATEGORY GRID
-========================= */
-.category-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    margin: 10px 20px;
-}
-
-.category {
-    padding: 40px;
-    background: #ddd;
-    border-radius: 10px;
-}
-
-/* =========================
-   DEALS
-========================= */
-.deals {
-    background: orange;
-    color: white;
-    margin-top: 40px;
-}
-
 /* =========================
    ABOUT US
 ========================= */
@@ -328,15 +282,7 @@ section {
         font-size: 2.5rem;
     }
 
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .category-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-   .about-second-content {
+     .about-second-content {
     display: grid;
     grid-template-columns: repeat (2, 1fr);
     grid-template-rows: auto;
@@ -363,15 +309,7 @@ section {
         font-size: 3rem;
     }
 
-    .product-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .category-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-.about p {
+ .about p {
     font-size: 1rem;
     color: #f4f4f4;
     }
