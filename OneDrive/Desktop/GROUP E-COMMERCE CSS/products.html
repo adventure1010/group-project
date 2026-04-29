@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="product-header">
+            <h1>Our Products</h1>
+            <p>
+                Browse our selection of high-quality products
+            </p>
+        </div>
+
+        <div class="product-layout">
+
+           <aside class="sidebar">
+                <h2>Filters</h2>
+
+                <div class="filter-group">
+                    <h3>Category</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="all-items"><label for="all-items">All Items</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sports-wears"><label for="sports-wears">Wears</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sports-accessories"><label for="sports-accessories">Accessories</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sports-equipments"><label for="sports-equipments">Equipment</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+
+                    <div class="price-range">
+                        <input type="range" id="price-range" min="0" max="50000" value="25000">
+                        <p>0 - 50,000</p>
+                    </div>
+                </div>
+           </aside>
+
+           <main class="products-placeholder">
+                <div class="product-card">
+                    <img src="./images/a5notepad.jpg" alt="a photo of a5 notepad">
+                    <h3 class="Product-name">
+                        A5 Notepad
+                    </h3>
+                    <p class="product-category"></p>
+                    <p class="product-price">7000</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+           </main>
+        </div>
+
+    </div>
+
+</body>
+</html>
