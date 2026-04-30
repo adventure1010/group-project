@@ -3,23 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>G7</title>
     <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header>
       <div class="logo">G7-Mart</div>
 
-      <button class="menu-toggle">☰</button>
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-      <nav class="nav">
+      <nav>
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <div class="nav-actions">
+        <a class="primary-btn" href="products.html">Shop now</a>
+
+        <button><i class="fa-regular fa-heart"></i></button>
+        <button><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
     </header>
 
     <section class="hero">
@@ -68,10 +84,29 @@
     <section class="categories">
       <h2>Categories</h2>
       <div class="category-grid">
-        <div class="category"><img src="/image/football2.jpg" alt="football2">Football</div>
-        <div class="category"><img src="/image/fitness.jpg" alt="">Fitness</div>
-        <div class="category"><img src="/image/basketball.jpg" alt="basketball">Basketball</div>
-        <div class="category"><img src="/image/tennis2.jpg" alt=tennis2"">Tennis</div>
+        <div class="category">
+          <img src="/image/football2.jpg" alt="football2" />
+          <div class="overlay"></div>
+          <h3>Football</h3>
+        </div>
+
+        <div class="category">
+          <img src="/image/fitness.jpg" alt="fitness" />
+          <div class="overlay"></div>
+          <h3>Fitness</h3>
+        </div>
+
+        <div class="category">
+          <img src="/image/basketball.jpg" alt="basketball" />
+          <div class="overlay"></div>
+          <h3>Basketball</h3>
+        </div>
+
+        <div class="category">
+          <img src="/image/tennis2.jpg" alt="tennis2" />
+          <div class="overlay"></div>
+          <h3>Tennis</h3>
+        </div>
       </div>
     </section>
 
@@ -88,22 +123,36 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="footer-grid">
-        <div>
-          <h3>G7-Mart</h3>
-          <p>Premium sports gear</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>G7-Mart</h3>
+                <p>Your one stop for premium sports gear and products</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:info@g7mart.com"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="tel:+234123456789"><i class="fa-regular fa-phone"></i></a></li>
+                    <li><a href="https://www.facebook.com/g7mart"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/g7mart"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+        </div class="footer-bottom">
+            <p>&copy; 2024 G7-Mart. All rights reserved.</p>
         </div>
-        <div>
-          <h4>Links</h4>
-          <a href="#">Home</a>
-          <a href="#">Products</a>
-        </div>
-        <div>
-          <h4>Social</h4>
-          <p>Facebook | Instagram</p>
-        </div>
-      </div>
     </footer>
   </body>
 </html>
