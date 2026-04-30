@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="product.css">
 </head>
+
 <body>
-    
+
     <div class="container">
-        
-        <header class="product-header">
+
+        <section class="product-hero">
             <h1>Our Products</h1>
             <p>
                 Browse our selection of high-quality products
             </p>
-        </header>
+        </section>
 
-        <div class="product-layout">
+        <section class="product-layout">
 
-            <div class="mobile-dropdown">
-                <button class="dropdown-btn">
-                    Category<i class="fa-solid fa-angle-down"></i>
-                </button>
-
-                <div class="dropdown-content">
-                    <a href="#">Clothing</a>
-                    <a href="#">Accessories</a>
-                    <a href="#">Equipment</a>
-                </div>
-
+            <section class="mobile-bar">
                 <div class="mobile-dropdown">
                     <button class="dropdown-btn">
-                        Price Range<i class="fa-solid fa-angle-down"></i>
+                        Category<i class="fa-solid fa-angle-down"></i>
                     </button>
 
                     <div class="dropdown-content">
-                        <input type="range" id="price-range" min="0" max="50000" value="25000">
-                        <p>0 - 50,000</p>
+                        <ul>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Equipment</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-dropdown">
+                        <button class="dropdown-btn">
+                            Price Range<i class="fa-solid fa-angle-down"></i>
+                        </button>
+
+                        <div class="dropdown-content">
+                            <input type="range" id="price-range" min="0" max="50000" value="25000">
+                            <p>0 - 50,000</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-           <aside class="desktop-sidebar">
+            <aside class="desktop-sidebar">
                 <h2>Filters</h2>
 
                 <div class="filter-group">
@@ -58,10 +66,12 @@
                             <input type="checkbox" id="sports-wears"><label for="sports-wears">Clothing</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="sports-accessories"><label for="sports-accessories">Accessories</label>
+                            <input type="checkbox" id="sports-accessories"><label
+                                for="sports-accessories">Accessories</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="sports-equipments"><label for="sports-equipments">Equipment</label>
+                            <input type="checkbox" id="sports-equipments"><label
+                                for="sports-equipments">Equipment</label>
                         </li>
                     </ul>
                 </div>
@@ -74,9 +84,9 @@
                         <p>0 - 50,000</p>
                     </div>
                 </div>
-           </aside>
+            </aside>
 
-           <main class="products-placeholder">
+            <main class="products-placeholder">
                 <div class="product-card">
                     <img src="./images/a5notepad.jpg" alt="a photo of a5 notepad">
                     <h3 class="Product-name">
@@ -87,7 +97,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/basketball.jpg" alt="a photo of a spalding basketball">
                     <h3 class="Product-name">
                         Spalding Basketball
@@ -97,7 +107,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/blackpen.jpg" alt="a photo of a bic black pen">
                     <h3 class="Product-name">
                         Bic Black Pen
@@ -107,7 +117,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/football.jpg" alt="a photo of a football">
                     <h3 class="Product-name">
                         Azu size 5 Football
@@ -117,7 +127,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/gym gloves.jpg" alt="a photo of gym gloves">
                     <h3 class="Product-name">
                         Gym Gloves
@@ -125,7 +135,7 @@
                     <p class="product-category">Clothing</p>
                     <p class="product-price">3500</p>
                     <button class="add-cart">Add to Cart</button>
-                </div> 
+                </div>
 
                 <div class="product-card">
                     <img src="./images/headwarmer.jpg" alt="a photo of a headwarmer">
@@ -137,7 +147,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/menshorts.jpg" alt="a photo of men's shorts">
                     <h3 class="Product-name">
                         Men's Shorts
@@ -147,7 +157,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/menslideslippers.jpg" alt="a photo of men's slides or slippers">
                     <h3 class="Product-name">
                         Men's Slides/Slippers
@@ -157,27 +167,27 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/mensneakers.jpg" alt="a photo of men's sneakers">
                     <h3 class="Product-name">
-                        Men's Sneakers  
+                        Men's Sneakers
                     </h3>
                     <p class="product-category">Clothing</p>
                     <p class="product-price">17000</p>
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/nigerianjersey.jpg" alt="a photo of a nigerian jersey">
                     <h3 class="Product-name">
-                       2026 Nigerian Home Jersey
+                        2026 Nigerian Home Jersey
                     </h3>
                     <p class="product-category">Clothing</p>
                     <p class="product-price">28000</p>
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/sportsbag.jpg" alt="a photo of a sports bag">
                     <h3 class="Product-name">
                         Sports Bag
@@ -187,7 +197,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/sportsbra.jpg" alt="a photo of a sports bra">
                     <h3 class="Product-name">
                         Sports Bra
@@ -197,7 +207,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/sportsocks.jpg" alt="a photo of sports socks">
                     <h3 class="Product-name">
                         Sports Socks
@@ -207,7 +217,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/sportswatch.jpg" alt="a photo of a sports watch">
                     <h3 class="Product-name">
                         G-shock Sports Watch
@@ -217,7 +227,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/tabletennisset.jpg" alt="a photo of a table tennis set">
                     <h3 class="Product-name">
                         Table Tennis Set
@@ -227,7 +237,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/tennisballs.jpg" alt="a photo of lawn tennis balls">
                     <h3 class="Product-name">
                         Lawn Tennis Balls
@@ -237,7 +247,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/tennisracket.jpg" alt="a photo of a lawn tennis racket">
                     <h3 class="Product-name">
                         Lawn Tennis Racket
@@ -247,7 +257,7 @@
                     <button class="add-cart">Add to Cart</button>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <img src="./images/waterbottle.jpg" alt="a photo of a water bottle">
                     <h3 class="Product-name">
                         Water Bottle
@@ -276,14 +286,15 @@
                     <p class="product-price">30000</p>
                     <button class="add-cart">Add to Cart</button>
                 </div>
-           </main>
-        </div>
+            </main>
+        </section>
 
         <footer>
-            
+
         </footer>
 
     </div>
 
 </body>
+
 </html>
